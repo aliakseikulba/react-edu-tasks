@@ -15,22 +15,24 @@ function Message(props: MessageType) {
         <div className={styles.avatarBlock}>
           <img src={props.avatar} alt="user avatar"/>
         </div>
-        <div className={styles.messageBlock}>
-          <div className={styles.userData}>
-            <div className={styles.userName}>
-              {props.name}
+        <div className={styles.textBubble}>
+          <div className={styles.messageBlock}>
+            <div className={styles.userData}>
+              <div className={styles.userName}>
+                {props.name}
+              </div>
+              <div className={styles.userMessage}>
+                {props.message}
+              </div>
             </div>
-            <div className={styles.userMessage}>
-              {props.message}
+            <div className={styles.timeData}>
+              {props.time}
             </div>
-          </div>
-          <div className={styles.timeData}>
-            {props.time}
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Message
+export default Message;

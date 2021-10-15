@@ -5,7 +5,7 @@
     align-items: flex-end;
     padding: 40px;
     width: 700px;
-    height: 240px;
+    height: 340px;
 }
 
 .contentWrapper {
@@ -23,7 +23,6 @@
     z-index: 1;
     position: relative;
     top: 10px;
-    left: 0;
 }
 
 .avatarBlock img {
@@ -32,30 +31,34 @@
     border-radius: 50%;
 }
 
-.messageBlock {
+.textBubble {
     position: relative;
     box-sizing: border-box;
     padding: 15px;
     background-color: #ffffff;
-    width: 280px;
-    height: 100px;
+    min-width: 200px;
+    max-width: 350px;
+    min-height: 90px;
+    max-height: 280px;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.messageBlock:before {
+.textBubble:before {
     content: '';
     position: absolute;
     border-style: solid;
     border-width: 0 0 55px 35px;
     border-color: #FFFFFF transparent;
     display: block;
-    width: 0;
     bottom: 0;
     left: -20px;
     z-index: 0;
+}
+
+.messageBlock {
+    display: flex;
+    justify-content: space-between;
+    max-width: 320px;
 }
 
 .userData {
@@ -71,14 +74,23 @@
 }
 
 .userMessage {
-    margin-top: 10px;
     font-size: 16px;
     font-weight: 500;
     color: #36454F;
+    margin-top: 10px;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.userMessage::-webkit-scrollbar {
+    width: 0;
 }
 
 .timeData {
+    position: relative;
+    top: 10px;
     font-size: 14px;
     color: #CBC3E3;
     align-self: flex-end;
+    margin-left: 20px;
 }
