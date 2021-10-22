@@ -1,3 +1,53 @@
-.someClass {
+.wrapper {
+    background-color:#D6DBDF;
+    width: 700px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.appWrapper {
+    background-color: aliceblue;
+    width: 500px;
+    min-height: 450px;
+    border-radius: 5px;
+    box-shadow: -5px -2px 16px 6px rgba(78, 68, 92, 0.21);
+    display: flex;
+    flex-direction: column;
+}
+
+.contentBlock {
+    flex: 1 1 auto;
+    padding: 30px;
+}
+
+.controlBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.controlBlock button {
+    border: 1px solid #6495ED;
+    border-radius: 5px;
+    color: #6495ED;
+    font-weight: bold;
+    margin: 10px 5px;
+    padding: 5px 0;
+    width: 70px;
+    background-color: #ffffff;
+    transition: 0.2s;
+}
+
+.controlBlock button:hover {
+    background-color: #6495ED;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.controlBlock button:active {
+    background-color: #ffffff;
+    border: 1px solid #6495ED;
+    color: #6495ED;
 }
