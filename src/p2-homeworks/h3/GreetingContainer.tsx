@@ -1,7 +1,6 @@
 import React, {ChangeEvent, useState} from 'react';
 import Greeting from './Greeting';
 import {UserType} from './HW3';
-import {notStrictEqual} from 'assert';
 
 type GreetingContainerPropsType = {
   users: UserType[]
