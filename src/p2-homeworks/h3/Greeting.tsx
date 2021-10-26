@@ -1,28 +1,47 @@
-import React from 'react'
-import s from './Greeting.module.css'
+import React, {ChangeEvent, KeyboardEvent} from 'react';
+import s from './Greeting.module.css';
 
 type GreetingPropsType = {
-    name: any // need to fix any
-    setNameCallback: any // need to fix any
-    addUser: any // need to fix any
-    error: any // need to fix any
-    totalUsers: any // need to fix any
+  name: string
+  setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void
+  addUser: () => void
+  error: string
+  totalUsers: number
 }
 
 // презентационная компонента (для верстальщика)
 const Greeting: React.FC<GreetingPropsType> = (
-    {name, setNameCallback, addUser, error, totalUsers} // деструктуризация пропсов
+  {name, setNameCallback, addUser, error, totalUsers}
 ) => {
-    const inputClass = s.error // need to fix with (?:)
+  const inputClass = error === '' ? s.addInput : s.errorInput;
+  const buttonClass = error === '' ? s.addButton : s.errorButton;
 
-    return (
-        <div>
-            <input value={name} onChange={setNameCallback} className={inputClass}/>
-            <span>{error}</span>
-            <button onClick={addUser}>add</button>
-            <span>{totalUsers}</span>
+  const onKeyPressHandle = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      addUser();
+    }
+  };
+
+  return (
+    <div className={s.wrapper}>
+      <div className={s.content}>
+      <div className={s.addFormBlock}>
+          <input
+            value={name}
+            placeholder='user name...'
+            onChange={setNameCallback}
+            className={inputClass}
+            onKeyPress={onKeyPressHandle}/>
+          <button className={buttonClass} onClick={addUser}>add</button>
+        <div className={s.errorTip}>{error}</div>
         </div>
-    )
-}
+        <div className={s.usersCount}>
+          <h1>number of users</h1>
+          <div>{totalUsers}</div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Greeting
+export default Greeting;
