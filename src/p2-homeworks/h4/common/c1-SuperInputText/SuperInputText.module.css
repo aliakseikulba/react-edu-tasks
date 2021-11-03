@@ -1,12 +1,41 @@
 .superInput {
+    box-sizing: border-box;
+    margin-top: 10px;
+    border: 1px solid #6495ED;
+    padding: 0 10px;
+    height: 30px;
+    outline: none;
+    width: 300px;
+    color: #1A5276;
+}
 
+.superInput::placeholder {
+    color: #6495ED;
+    opacity: 0.5;
+}
+
+.errorPlace {
+    width: 300px;
+    height: 20px;
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border: 1px solid #F44336;
+    color: #F44336;
+    padding: 0 10px;
+    height: 30px;
+    outline: none;
+    width: 300px;
+}
+
+.errorInput::placeholder {
+    opacity: 0.5;
+    color: #F44336;
 }
 
 .error {
-    color: red;
+    font-size: 12px;
+    color: #F44336;
 }
