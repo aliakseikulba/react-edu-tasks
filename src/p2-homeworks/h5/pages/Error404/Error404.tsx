@@ -1,13 +1,16 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
+import s from './Error404.module.css';
+
 
 export function Error404() {
+
   return (
-    <div>
-      <div>404</div>
-      <div>Page not found!</div>
-      <div>—ฅ/ᐠ.̫ .ᐟ\ฅ—</div>
-      <Link to='/'>GO HOME</Link>
+    <div className={s.wrapper}>
+      <div className={s.errorMessage}>404</div>
+      <div className={s.errorMessage}>Page not found!</div>
+      <div className={s.errorMessage}>¯\_(ツ)_/¯</div>
+      <NavLink to='/' className={s.link}>GO HOME</NavLink>
     </div>
   );
 }

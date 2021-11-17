@@ -12,10 +12,6 @@ export function PreJunior() {
       <div><HW2/></div>
       <div><HW3/></div>
       <div><HW4/></div>
-
-
-
-
       {/*<HW6/>*/}
 
     </div>
