@@ -1,0 +1,9 @@
+.navigation {
+    background-color: #24252c;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+.navigation>div {
+    margin: 10px;
+}
