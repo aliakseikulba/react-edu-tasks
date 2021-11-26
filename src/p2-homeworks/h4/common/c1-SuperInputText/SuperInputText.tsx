@@ -11,6 +11,7 @@ type SuperInputTextPropsType = DefaultInputPropsType & { // и + ещё проп
   onEnter?: () => void
   error?: string
   spanClassName?: string
+  placeholder?:string
 }
 
 const SuperInputText: React.FC<SuperInputTextPropsType> = (
@@ -19,7 +20,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
     onChange, onChangeText,
     onKeyPress, onEnter,
     error,
-    className, spanClassName,
+    className, spanClassName, placeholder,
 
     ...restProps// все остальные пропсы попадут в объект restProps
   }
@@ -48,7 +49,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
         onChange={onChangeCallback}
         onKeyPress={onKeyPressCallback}
         className={finalInputClassName}
-        placeholder="email..."
+        placeholder={placeholder}
 
         {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
       />

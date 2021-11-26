@@ -5,14 +5,11 @@ import {PageRoutes} from './PageRoutes'
 function HW5() {
     return (
         <div>
-            {/*в gh-pages лучше работает HashRouter*/}
-            {/*<HashRouter>*/}
 
             <Header/>
 
             <PageRoutes/>
 
-            {/*</HashRouter>*/}
         </div>
     )
 }

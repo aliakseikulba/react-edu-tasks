@@ -27,11 +27,13 @@ function HW4() {
           onChangeText={setText}
           onEnter={showAlert}
           error={error}
+          placeholder={'email...'}
           // spanClassName={s.testSpanError}
         />
 
         <SuperInputText
           className={s.compatibilityTest} // проверьте, работает ли смешивание классов
+          placeholder={'email...'}
         />
 
         {/*----------------------------------------------------*/}
