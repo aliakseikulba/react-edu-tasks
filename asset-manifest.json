@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/react-edu-tasks/static/css/main.76c5cf67.chunk.css",
-    "main.js": "/react-edu-tasks/static/js/main.d7a7090e.chunk.js",
-    "main.js.map": "/react-edu-tasks/static/js/main.d7a7090e.chunk.js.map",
+    "main.css": "/react-edu-tasks/static/css/main.70b5d1b7.chunk.css",
+    "main.js": "/react-edu-tasks/static/js/main.5266dcf1.chunk.js",
+    "main.js.map": "/react-edu-tasks/static/js/main.5266dcf1.chunk.js.map",
     "runtime-main.js": "/react-edu-tasks/static/js/runtime-main.fec7edac.js",
     "runtime-main.js.map": "/react-edu-tasks/static/js/runtime-main.fec7edac.js.map",
-    "static/js/2.67cc0c09.chunk.js": "/react-edu-tasks/static/js/2.67cc0c09.chunk.js",
-    "static/js/2.67cc0c09.chunk.js.map": "/react-edu-tasks/static/js/2.67cc0c09.chunk.js.map",
+    "static/js/2.b78a0b98.chunk.js": "/react-edu-tasks/static/js/2.b78a0b98.chunk.js",
+    "static/js/2.b78a0b98.chunk.js.map": "/react-edu-tasks/static/js/2.b78a0b98.chunk.js.map",
     "index.html": "/react-edu-tasks/index.html",
-    "static/css/main.76c5cf67.chunk.css.map": "/react-edu-tasks/static/css/main.76c5cf67.chunk.css.map",
-    "static/js/2.67cc0c09.chunk.js.LICENSE.txt": "/react-edu-tasks/static/js/2.67cc0c09.chunk.js.LICENSE.txt"
+    "static/css/main.70b5d1b7.chunk.css.map": "/react-edu-tasks/static/css/main.70b5d1b7.chunk.css.map",
+    "static/js/2.b78a0b98.chunk.js.LICENSE.txt": "/react-edu-tasks/static/js/2.b78a0b98.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fec7edac.js",
-    "static/js/2.67cc0c09.chunk.js",
-    "static/css/main.76c5cf67.chunk.css",
-    "static/js/main.d7a7090e.chunk.js"
+    "static/js/2.b78a0b98.chunk.js",
+    "static/css/main.70b5d1b7.chunk.css",
+    "static/js/main.5266dcf1.chunk.js"
   ]
 }
